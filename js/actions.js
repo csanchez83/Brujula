@@ -75,8 +75,10 @@ function iniciarBrujula()
 {
     function onSuccess(heading) 
     {
-        var element = document.getElementById('heading');
-        element.innerHTML = 'Heading: ' + heading.magneticHeading;
+        //var element = document.getElementById('heading');
+        //element.innerHTML = 'Heading: ' + heading.magneticHeading;
+        alert("Brujula iniciada");
+        
     };
 
     function onError(compassError) 
