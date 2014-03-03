@@ -83,22 +83,22 @@ function iniciarBrujula()
         
         if ((posicion >= 0) && (posicion <= 90))
         {
-            $('#brujula h2').html('Posicion: ' + heading.magneticHeading);
+            $('#brujula h2').html('Posicion: ' + heading.magneticHeading + ' grados Noreste');
         }
         
         if ((posicion > 90) && (posicion <= 180))
         {
-            $('#brujula h2').html('Posicion: ' + heading.magneticHeading);
+            $('#brujula h2').html('Posicion: ' + heading.magneticHeading + ' grados Sureste');
         }
         
         if ((posicion > 180) && (posicion <= 270))
         {
-            $('#brujula h2').html('Posicion: ' + heading.magneticHeading);
+            $('#brujula h2').html('Posicion: ' + heading.magneticHeading + ' grados Suroeste');
         }
         
         if ((posicion > 270) && (posicion <= 360))
         {
-            $('#brujula h2').html('Posicion: ' + heading.magneticHeading);
+            $('#brujula h2').html('Posicion: ' + heading.magneticHeading + ' grados Noroeste');
         }
              
     };
