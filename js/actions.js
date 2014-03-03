@@ -77,8 +77,30 @@ function iniciarBrujula()
     {
         //var element = document.getElementById('heading');
         //element.innerHTML = 'Heading: ' + heading.magneticHeading;
-        alert("Brujula iniciada: " + heading.magneticHeading);
+        //alert("Brujula iniciada: " + heading.magneticHeading);
         
+        var posicion = heading.magneticHeading;
+        
+        if ((posicion >= 0) && (posicion <= 90))
+        {
+            $('#brujula h2').html('Posicion: ' + heading.magneticHeading);
+        }
+        
+        if ((posicion > 90) && (posicion <= 180))
+        {
+            $('#brujula h2').html('Posicion: ' + heading.magneticHeading);
+        }
+        
+        if ((posicion > 180) && (posicion <= 270))
+        {
+            $('#brujula h2').html('Posicion: ' + heading.magneticHeading);
+        }
+        
+        if ((posicion > 270) && (posicion <= 360))
+        {
+            $('#brujula h2').html('Posicion: ' + heading.magneticHeading);
+        }
+             
     };
 
     function onError(compassError) 
@@ -88,8 +110,8 @@ function iniciarBrujula()
 
     var options = 
     {
-        frequency: 100
-    }; // Update every 0.1 seconds
+        frequency: 1000
+    }; // Update every 1 seconds
 
     accBrujula= navigator.compass.watchHeading(onSuccess, onError, options);
     
