@@ -77,7 +77,7 @@ function iniciarBrujula()
     {
         //var element = document.getElementById('heading');
         //element.innerHTML = 'Heading: ' + heading.magneticHeading;
-        alert("Brujula iniciada");
+        alert("Brujula iniciada: " + heading.magneticHeading);
         
     };
 
